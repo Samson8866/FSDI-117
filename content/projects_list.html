@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %} Projects {% endblock title %}
+{% load static %}
+
+{% block content %}
+<section class="projects-sectiom center-column">
+    <p class="section-title"><h2>Projects</h2>
+
+        {% if user.is_authenticated %}
+            <a class="btn" href="{%  %}">Add Project</a>
+        {% endif %}
+
+    <div class="projects-list center-row">
+
+        {% for project in projects %}
+        <div class="project-card">
+            <a href="{{project.repository}}" target="_blank"></a>
+            <img src="">
+
+            <p>Project Name</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, voluptas.</p>
+            <p>yyyy</p>
+
+            <div class="skills-container">
+                <label class="text-label">Skills</label>
+                <label class="text-label">Skills</label>
+                <label class="text-label">Skills</label>
+                <label class="text-label">Skills</label>
+            </div>
+        </div>
+
+        <div class="project-card">
+
+        </div>
+
+        <div class="project-card">
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock content %}

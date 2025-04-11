@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Login{% endblock title %}
+{% load static %}
+
+{% block content %}
+
+<section class="login-section center-column">
+
+    <div class="login-image-container">
+        <img src="">
+    </div>
+
+    <h2 class="section-title">My Portfolio</h2>
+
+    <div class="login-container center-column">
+        {% if form.errors %}
+        <p style="color: red;">Invalid username or password</p>
+        {% endif %}
+
+        <form method="post" class="center-column">
+            {% csrf_token %}
+            <label for="username">Username</label>
+            {{ forms.username }} <br><br>
+
+            <label for="password">Password</label>
+            {{ forms.username }} <br><br>
+
+            <button class="btn" type="submit">Login</button>
+
+        </form>
+    </div>
+
+</section>
+{% endblock content %}

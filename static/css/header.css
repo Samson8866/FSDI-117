@@ -1,0 +1,55 @@
+header{
+    position: sticky;
+    background-color: var(--surface-color);
+    top: 0px;
+    height: 60px;
+}
+
+/* Left Side */
+.header-left-side{
+    width: 30%;
+}
+
+/* Center-row */
+.center-row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*Right Side */
+.header-right-side{
+    width: 70px;
+}
+
+.nav-options {
+    width: 100%;
+}
+
+.nav-options a{
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 2%;
+    padding: 1% 2%;
+}
+
+.nav-options a:hover {
+    text-decoration: none;
+    border-bottom: solid 2px white;
+    color: white;
+    transition: 0.15s ease-in-out;
+}
+
+/*Ham Button*/
+.nav-btn span {
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    margin: 6px 0px;
+    display: block;
+}
+
+#nav-check, .nav-btn {
+    display: none;
+}

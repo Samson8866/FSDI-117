@@ -1,0 +1,122 @@
+/*Phone View*/
+
+@media(max-width:640px){
+    html {
+        font-size: 12px;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    /*Headers*/
+    header{
+        height: max-content;
+        padding: 2%;
+        flex-direction: column;
+    }
+
+    .header-left-side {
+        display: none;
+    }
+
+    .header-right-side {
+        width: 100%;
+    }
+
+    .center-row {
+        align-items: flex-start;
+    }
+
+
+.nav-options {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-options a{
+    margin: 1rem 0px;
+}
+
+/*Toggle function */
+.nav-btn {
+    display: inline-flex;
+}
+
+#nav-check:not(:checked)~.nav-options {
+    height: 0px;
+    overflow: hidden;
+}
+
+#nav-check:checked~.nav-options {
+    height:auto;
+    overflow: auto;
+}
+
+
+/*Hamburger Button*/
+.nav-button {
+    display:inline-flex;
+}
+
+.header-left-side{
+    width: 100%;
+}
+
+.header-right-side {
+    width: 100%;
+    align-items: baseline;
+}
+
+
+/*Toggle Function -> ~ */
+#nav-check:not(:checked) ~ .nav-options {
+    overflow: hidden;
+    height: 0px;
+}
+
+#nav-checked:checked~.nav-options {
+    height: auto;
+    overflow: auto;
+}
+
+.skill-list {
+    width: 100% !important;
+}
+
+}
+/* Tablet View */
+@media((min-width:641px) and (max-width:1007px)){
+    html{font-size:14px;}
+
+    .center-row {
+        flex-direction: column;
+    }
+
+    .about-description-container{
+        width: 100%;
+    }
+
+    .about-image-container {
+        margin-bottom: 4rem;
+    }
+
+    .skill-list {
+        flex-direction: row;
+    }
+}
+
+.project-card {
+    background-color: blue;
+    width: 100%;
+}
+
+.projects-card a img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+}

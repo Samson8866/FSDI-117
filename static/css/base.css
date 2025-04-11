@@ -1,0 +1,56 @@
+/*Desktop View*/
+
+:root {
+    --primary-color:
+    --background-color: #3b8c6e;
+    --surface-color: blue;
+
+    --lobster-font: "Lobster Two", sans-serif;
+    --Dm-font: "DM Sans", sans-serif;
+}
+
+html {
+    font-size: 16px;
+    background-color: var(--background-color);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2{
+    color: white;
+    font-family: var(--lobster-font);
+    font-size: 1 rem;
+    margin: 20px;
+}
+
+
+.center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-label {
+    color: white;
+    background-color: var(--surface-color);
+    font: 1.1 rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.8 rem 1.5 rem;
+    cursor: initial;
+}
